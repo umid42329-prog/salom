@@ -13,14 +13,15 @@ def majority_element(nums: list) -> int:
         else:
             counts[num] = 1
 
-    max_elemen
-
-nums = [2, 2, 1, 1, 1, 2, 2]
-
-print(majority_element(nums))
-t = nums[0]
+    max_element = nums[0]
 
     for num in counts:
         if counts[num] > counts[max_element]:
             max_element = num
+
     return max_element
+
+
+nums = [2, 2, 1, 1, 1, 2, 2]
+print(majority_element(nums))
+
