@@ -11,8 +11,9 @@ def merge_unique_ids(active_users: list, new_users: list) -> list:
     return result
 
 
-active_users = ['U1001', 'U1002', 'U1003', 'U1004', 'U1001']
+active_users = input("Faol foydalanuvchilar IDlarini kiriting: ").split()
 
-new_users = ['U1003', 'U1005', 'U1006', 'U1002', 'U1007']
+new_users = input("Yangi foydalanuvchilar IDlarini kiriting: ").split()
 
+print("Noyob IDlar:")
 print(merge_unique_ids(active_users, new_users))
