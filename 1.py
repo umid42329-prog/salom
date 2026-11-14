@@ -1,27 +1,26 @@
 # 1 masala
 
 
-# def majority_element(nums: list) -> int:
-#     if not nums:
-#         return -1
+def majority_element(nums: list) -> int:
+    if not nums:
+        return -1
 
-#     counts = {}
+    counts = {}
 
-#     for num in nums:
-#         if num in counts:
-#             counts[num] += 1
-#         else:
-#             counts[num] = 1
+    for num in nums:
+        if num in counts:
+            counts[num] += 1
+        else:
+            counts[num] = 1
 
-#     max_elemen
+    max_elemen
 
-# nums = [2, 2, 1, 1, 1, 2, 2]
+nums = [2, 2, 1, 1, 1, 2, 2]
 
-# print(majority_element(nums))
-# t = nums[0]
+print(majority_element(nums))
+t = nums[0]
 
-#     for num in counts:
-#         if counts[num] > counts[max_element]:
-#             max_element = num
-
-    # return max_element
+    for num in counts:
+        if counts[num] > counts[max_element]:
+            max_element = num
+    return max_element
