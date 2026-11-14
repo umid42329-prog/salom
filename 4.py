@@ -5,18 +5,22 @@ def sorted_by_price(products: list) -> list:
     return sorted(products, key=lambda product: int(product[1]), reverse=True)
 
 
-products = [
-    ('Olma', '12000', '50'),
-    ('Banan', '8000', '100'),
-    ('Gilos', '15000', '70'),
-    ('Apelsin', '9000', '80'),
-    ('Anor', '30000', '20'),
-    ('Uzum', '20000', '40'),
-    ('Tarvuz', '25000', '15'),
-    ('Shaftoli', '18000', '60'),
-    ('Qovun', '40000', '25'),
-    ('Qulupnay', '35000', '10')
-]
+products = []
 
-print(sorted_by_price(products))
+n = int(input("Nechta mahsulot kiritasiz? "))
+
+for i in range(n):
+    print(f"{i + 1}-mahsulot:")
+    name = input("Mahsulot nomi: ")
+    price = input("Mahsulot narxi: ")
+    count = input("Mahsulot soni: ")
+
+    products.append((name, price, count))
+
+result = sorted_by_price(products)
+
+print("\nNarx bo'yicha kamayish tartibida:")
+for product in result:
+    print(product)
+
 
