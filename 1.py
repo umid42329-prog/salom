@@ -22,6 +22,8 @@ def majority_element(nums: list) -> int:
     return max_element
 
 
-nums = [2, 2, 1, 1, 1, 2, 2]
-print(majority_element(nums))
+nums = list(map(int, input("Sonlarni kiriting: ").split()))
+
+print("Eng ko'p takrorlangan son:", majority_element(nums))
+
 
